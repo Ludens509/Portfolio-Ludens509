@@ -10,11 +10,11 @@ This repository is about my portfolio.
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="https://portfolio-ludens509.netlify.app">
       Demo
     </a>
-    <span> | </span>
-    <a href="portfolio-ludens509.netlify.app">
+<!--     <span> | </span>
+    <a href="portfolio-ludens509.netlify.app"> -->
      
   </h3>
 </div>
