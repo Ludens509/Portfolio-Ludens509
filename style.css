@@ -1,0 +1,235 @@
+
+
+/*-----------Acceuil Page--------------*/
+.Display_skills
+{ 
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+header{ justify-content:space-between;}
+nav{
+    border-width: 1px;
+    box-shadow:0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    padding: 0px;
+    background-color: whitesmoke;
+    }
+nav,a 
+    {
+        text-align: center;
+        text-decoration: none;
+        font-size: 17px;
+        padding: 8px 10px;  
+    }
+    .nav a:hover
+{
+    background-color:blue;
+}
+.nav a.active{
+   
+    border-radius: 1px; 
+} 
+
+.active:hover{
+    border-left: 3px solid transparent;
+    border-bottom: 3px solid blue;
+}
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+body{
+    font-family:  monospace,Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.globalDiv
+{
+    display:flex ;
+    justify-content: space-evenly;
+    margin: 5%;
+    margin-bottom: 0;
+    margin-top: 20px;
+}
+.title_skills,.title_education
+    {
+        text-align: center;
+        margin: 0;
+    }
+.subDiv
+{
+    flex-direction: column;
+   justify-content: center;
+   width: 100%;
+}
+#size_subDiv1
+{
+    width: 50%;
+}
+.card
+{
+    border-radius:15px ;
+    box-shadow:0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    margin: 10px;
+}
+.card:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.container
+{
+    padding: 2px 16px;
+    
+}
+.container_Education
+{
+    padding: 10px 16px;
+    border-left: 2px solid blue;
+    margin: 10px;
+}
+.imgCard
+{
+    border-radius: 5px 5px 0 0;
+}
+.card_skill_content,.card_contact_content
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 10px;
+    padding: 5px;
+    
+}
+.skill-meter{
+    background-color: darkgrey;
+    height: 8px;
+    border-radius: 20px;
+}
+.skill-meter-filler{
+    background-color: blue;
+    height: 8px;
+    border-radius: 20px;
+}
+
+footer
+{
+    margin-top: 14px;
+    justify-content: space-evenly;
+    font-family:' Montserrat', sans-serif;
+    text-align: center;
+}
+#Education_image2
+{
+    margin-top: 15px;
+    width: 50%;
+}
+/*----------------Responsive Page Acceuil------------------*/
+
+@media screen and (max-width:600px)
+{
+   
+   
+    .globalDiv
+    {
+        display: flex;
+       flex-direction: column;
+       /*height:100%;*/
+       margin: 0%;
+    }
+    .subDiv
+    {
+        margin:0px;
+        
+    }
+    #size_subDiv1
+    {
+        width:100%;
+    }
+    nav,a 
+    {
+        float: center;
+        text-align: center;
+        text-decoration: none;
+        font-size: 17px;
+        padding: 8px 10px;  
+    }
+    
+    .title_skills,.title_education
+    {
+        text-align: center;
+       
+    }
+
+    .Display_skills{
+        display:grid; 
+        grid-template-rows:repeat(1,1fr);
+        grid-template-columns: none;
+    }
+    #Education_image
+    {
+        width: 80%;
+        margin-top: 50px;
+    }
+    #Education_image2
+    {
+          margin-top: 20px;
+        width: 80%;
+    }
+}
+
+/* ==================================================== */
+
+
+
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.popup{
+    background-color: #333333;
+    width: 450px;
+    padding: 30px 40px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    border-radius: 8px;
+    font-family: "Poppins",sans-serif;
+    display: none;
+    text-align: center;
+    color: #ffffff;
+}
+.popup button{
+    display: block;
+    margin:  0 0 20px auto;
+    background-color: transparent;
+    font-size: 30px;
+    color: #c5c5c5;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.popup p{
+    font-size: 14px;
+    text-align: justify;
+    margin: 20px 0;
+    line-height: 25px;
+}
+a{
+    display: block;
+    width: 150px;
+    position: relative;
+    margin: 10px auto;
+    text-align: center;
+    background-color: #0f72e5;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px 0;
+}
